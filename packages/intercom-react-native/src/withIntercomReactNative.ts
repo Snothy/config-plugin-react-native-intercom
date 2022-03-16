@@ -51,8 +51,7 @@ const withIntercomReactNative: ConfigPlugin<PluginProps> = (config, { appId, ios
     localConfig = withPlugins(localConfig, [
       [withIntercomAndroidManifest, {}],
       [withIntercomMainApplication, { apiKey: androidApiKey, appId }],
-      [withIntercomAppBuildGradle, {}],
-      [withIntercomProjectBuildGradle, {}]
+      [withIntercomAppBuildGradle, {}]
     ]);
   }
 
